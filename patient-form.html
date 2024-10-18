@@ -1,0 +1,507 @@
+<!-- 
+program name: patient-form.html
+author: Vivian Wang
+date created: 8/24/2024
+date last edited: the date you submitted it
+version: 1.0
+description: creating a page with a form to register a new account and capture demographic data
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset= "utf-8">
+    <link rel="stylesheet" href= "hw1.css"> <!--links to css file-->
+<script src="https://kit.fontawesome.com/a39d43e7f2.js" crossorigin="anonymous"></script>
+
+    <title>hw1</title>
+</head>
+<body>
+    <header> 
+        <table valign="top" align="left" width= "100%">
+        <tr>
+            <td width="20">
+                    <img align="center" src="Medical_logo2.png" alt="Clinic Logo" width="150px" id= "logo">
+            </td>
+
+            <td>
+                <h1><i class="fas fa-heart"></i>Cougar Minor Illness Clinic<i class="fas fa-heart"></i></h1> 
+            </td>
+    
+            <td valign="bottom" align="right" width="20%">
+                    Today's Date: <span id="today">
+            </td>
+    </tr>
+    </table>
+    </header> 
+<hr/>
+
+<!--form information begins here-->
+<form action="thankyou1.html">
+    <center>
+        <div class="format">
+            <table>
+                <tr>
+                        <th colspan="4">Create Patient Portal Account</th>
+                </tr>
+
+                <!-- patient's information section starts here-->
+                <tr>
+                    <td align= "center" class="td1" label for="fname">Name:</label></td>
+                    <td>
+                        <input
+                        type="text"
+                        name="fname"
+                        id="fname"
+                        maxlength="30"
+                        required
+                        title="Please Enter Your First Name"
+                        placeholder="Vivian"
+                        />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="td1" label for="mini">Middle Initial:</label></td>
+                    <td>
+                        <input
+                            type="text"
+                            name="mini"
+                            id="mini"
+                            maxlength="1"
+                            size="1"
+                            title="Please Enter Your Middle Initial (Optional)"
+                        />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="td1" label for="lname">Last Name:</label></td>
+                    <td>
+                        <input
+                            type="text"
+                            name="lname"
+                            id="lname"
+                            maxlength="30"
+                            required
+                            title="Please Enter Your Last Name"
+                            placeholder ="Wang"
+                        />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="td1" label for="sex">Patient's Sex:</label></td>
+                    <td>
+                        <input
+                            type="radio"
+                            name="sex"
+                            id="s1"
+                            value="Male"
+                        />
+                        Male
+
+                        <input
+                            type="radio"
+                            name="sex"
+                            id="s1"
+                            value="Female"
+                        />
+                        Female
+                        <input
+                            type="radio"
+                            name="sex"
+                            id="s1"
+                            value="Other"
+                        />
+                        Other
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="td1" label for="dob">Date of Birth:</label></td>
+                    <td>
+                        <input
+                            type="date"
+                            name="dob"
+                            id="dob"
+                            required
+                            title="Please Enter Your Date of Birth"
+                        />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="td1" label for="SSN">Social Security Number:</label></td>
+                    <td>
+                        <input
+                            type="password"
+                            name="SSN"
+                            id="SSN"
+                            maxlength="11"
+                            size="11"
+                            title="Please Enter Your Social Security Number"
+                            placeholder="***-**-****"
+                        />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="td1" label for="email">Email Address:</label></td>
+                    <td>
+                        <input
+                            type="text"
+                            name="email"
+                            id="email"
+                            maxlength="70"
+                            required
+                            title="Please Enter Your Email Address"
+                            placeholder="CMICA@gmail.com"
+                        />
+                    </td>
+                </tr>
+
+                <tr>
+                    <th colspan="4"><hr></th> <!--divider-->
+                </tr>
+                <tr>
+                    <th colspan="4">Patient's Contact Information</th>
+                </tr>
+
+                <tr>
+                    <td class="td1" label for="haddress">Address:</label></td>
+                    <td>
+                        <input
+                            type="text"
+                            name="haddress"
+                            id="haddress"
+                            maxlength="30"
+                            required
+                            title="Please Enter Your Address"
+                        />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="td1" label for="city">City:</label></td>
+                    <td>
+                        <input
+                            type="text"
+                            name="city"
+                            id="city"
+                            maxlength="30"
+                            required
+                            title="Please Enter Your City"
+                            placeholder="Houston"
+                        />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="td1" label for="state">State:</label></td>
+                    <td>
+                            <select>
+                                <option selected disabled>Please Select One</option>
+                               	<option value="AL">Alabama</option>
+                                <option value="AK">Alaska</option>
+                                <option value="AZ">Arizona</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="CA">California</option>
+                                <option value="CO">Colorado</option>
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="DC">District Of Columbia</option>
+                                <option value="FL">Florida</option>
+                                <option value="GA">Georgia</option>
+                                <option value="HI">Hawaii</option>
+                                <option value="ID">Idaho</option>
+                                <option value="IL">Illinois</option>
+                                <option value="IN">Indiana</option>
+                                <option value="IA">Iowa</option>
+                                <option value="KS">Kansas</option>
+                                <option value="KY">Kentucky</option>
+                                <option value="LA">Louisiana</option>
+                                <option value="ME">Maine</option>
+                                <option value="MD">Maryland</option>
+                                <option value="MA">Massachusetts</option>
+                                <option value="MI">Michigan</option>
+                                <option value="MN">Minnesota</option>
+                                <option value="MS">Mississippi</option>
+                                <option value="MO">Missouri</option>
+                                <option value="MT">Montana</option>
+                                <option value="NE">Nebraska</option>
+                                <option value="NV">Nevada</option>
+                                <option value="NH">New Hampshire</option>
+                                <option value="NJ">New Jersey</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="NY">New York</option>
+                                <option value="NC">North Carolina</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="OH">Ohio</option>
+                                <option value="OK">Oklahoma</option>
+                                <option value="OR">Oregon</option>
+                                <option value="PA">Pennsylvania</option>
+                                <option value="RI">Rhode Island</option>
+                                <option value="SC">South Carolina</option>
+                                <option value="SD">South Dakota</option>
+                                <option value="TN">Tennessee</option>
+                                <option value="TX">Texas</option>
+                                <option value="UT">Utah</option>
+                                <option value="VT">Vermont</option>
+                                <option value="VA">Virginia</option>
+                                <option value="WA">Washington</option>
+                                <option value="WV">West Virginia</option>
+                                <option value="WI">Wisconsin</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
+                        </td>
+                </tr>
+
+                <tr>
+                    <td class="td1" label for="zcode">Zip Code:</label></td>
+                    <td>
+                        <input
+                            type="text"
+                            name="zcode"
+                            id="zcode"
+                            pattern="[0-9]{5}"
+                            maxlength="5"
+                            size="5"
+                            required
+                            title="Please Enter Your Zip Code"
+                            placeholder="77004"
+                        />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="td1" label for="phonenum">Phone Number:</label></td>
+                    <td>
+                        <input
+                            type="text"
+                            name="phonenum"
+                            id="phonenum"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            maxlength="12"
+                            minlength="12"
+                            size="12"
+                            required
+                            title="Please Enter Your Phone Number (without the country code)"
+                            placeholder="888-888-8888"
+                        />
+                    </td>
+                </tr>
+
+                <tr>
+                    <th colspan="4"><hr></th> <!--divider-->
+                    </tr>
+
+                <tr>
+                    <th colspan="4">Patient's Condition</th>
+                </tr>
+
+                <tr>
+                    <td class="td1" label for="symptoms"> Are you currently experiencing <br>any of these symptoms?</label></td>
+                    <td>
+                            <input type="checkbox" id="option1" value="hbp"/>
+                            <label for="hbp">High Blood Pressure</label><br>
+
+                            <input type="checkbox" id="option2" value="fever"/>
+                            <label for="fever">High Fever</label><br>
+
+                            <input type="checkbox" id="option3" value="muscle_aches"/>
+                            <label for="muscle_aches">Muscle Aches</label><br>
+
+                            <input type="checkbox" id="option4" values="diarrhea"/>
+                            <label for="diarrhea">Diarrhea</label><br>
+
+                            <input type="checkbox" id="option5" value="def_breathing"/>
+                            <label for="def_breathing">Difficulty Breathing</label><br>
+
+                            <input type="checkbox" id="option6" value="congestion"/>
+                            <label for="congestion">Nasal Congestion</label><br>
+
+                            <input type="checkbox" id="option7" value="vomiting"/>
+                            <label for="Vomiting">Vomiting</label><br>
+
+                            <input type="checkbox" id="option8" value="taste_sense"/>
+                            <label for="taste_sense">Lost Sense of Taste</label><br>
+
+                            <input type="checkbox" id="option9" value="coughing"/>
+                            <label for="coughing">Constant Coughing</label><br>
+
+                            <input type="checkbox" id="option10" value="sore_throat"/>
+                            <label for="sore_throat">Sore Throat</label><br>
+
+                </tr>
+
+                <tr>
+                    <td class="td1">
+                        <label for="notes"> If you selected any of the above, please explain:</label><br>
+                    </td>
+                    <td>
+                        <textarea
+                            rows="4"
+                            cols="50"
+                            maxlength="500"
+                            id="notes"
+                            name="notes"
+                            title="Please enter a brief description of your symptoms"
+                            placeholder="(Insert text here...)"
+                        ></textarea>
+                            <span id="description_text"></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="td1" label for="range">Urgency of appointment? (Please rate from scale of 1-10)</label></td>
+                    <td>
+                        <input
+                            type="range"
+                            maxlength="500"
+                            id="range"
+                            name="range"
+                            min="1"
+                            max="10"
+                            value="0"
+                            required
+                        />
+                            <span id="range-slider"></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th colspan="4"><hr></th> <!--divider-->
+                </tr>
+
+                <tr>
+                    <th colspan="4">Patient's Insurance Information</th>
+                </tr>
+
+                    <tr>
+                        <td class="td1" label for="checkins">Do you have medical insurance coverage?</label></td>
+                        <td>
+                            <input
+                                type="radio"
+                                id="checkins"
+                                name="checkins"
+                                value="Yes"
+                                />
+                                Yes
+
+                            <input
+                                type="radio"
+                                id="checkins"
+                                name="checkins"
+                                value="No"
+                                />
+                                No
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>If yes, please answer the questions below:
+                        <br>
+                    <tr>
+                <tr>
+                    <td class="td1" label for="cardid"> Cardholder ID: </td>
+                    <td>
+                        <input
+                        type="text"
+                        id="cardid"
+                        name="cardid"
+                        title="If you have insurance, please enter your cardholder ID"
+                        />
+                    </td>
+                </tr>
+            <tr>
+                <td class="td1" label for="inscomp">Insurance Company: </label></td>
+                <td>
+                    <input
+                    type="text"
+                    id="inscomp"
+                    name="inscomp"
+                    title="Please enter the medical insurance company name"
+                    placeholder="Medicaid"
+                    />
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1" label for="cardholder">Name of Cardholder:</label></td><br>
+                <td>
+                    <input
+                    type="text"
+                    id="cardholder"
+                    name="cardholder"
+                    title="Please enter the name of the cardholder"
+                    />
+                </td>
+            </tr>
+            <tr>
+                        <th colspan="4"><hr></th> <!--divider-->
+                    </tr>
+        <tr>
+            <th colspan="4">Finish Patient Portal Account</th>
+        </tr>
+
+        <tr>
+            <td class="td1" label for="username">Username: </label></td><br>
+            <td>
+                <input
+                type="text"
+                id="username"
+                name="username"
+                required
+                maxlength="25"
+                title="Please create the username that is not your email"
+                />
+            </td>
+        </tr>
+         <tr>
+            <td class="td1" label for="password1">Password: </label></td>
+            <td>
+                <input
+                type="password"
+                id="passwor1d"
+                name="password1"
+                required
+                maxlength="25"
+                title="Please enter your chosen password"
+                />
+            </td>
+        </tr>
+        <tr>
+            <td class="td1" label for="compassword">Confirm Password: </label></td>
+            <td>
+                <input
+                type="password"
+                id="compassword"
+                name="compassword"
+                required
+                maxlength="25"
+                title="Please enter your password again"
+                />
+            </td>
+        </tr>
+        <tr>
+            <td class="td1" colspan="4">
+                <center>
+                    <input type="submit" name= "submit" id="submit" style="font-family: 'Baskerville', sans-serif;">
+                    <input type="reset" name= "reset" id="reset" style="font-family: 'Baskerville', sans-serif;">
+                </center>
+            </td>
+        </tr>
+        </table>
+        </div>
+    </center>
+<form>
+    <!--footer that contains the website link-->
+<footer>
+    <p id="footer">&#169 2024 Cougar Minor Illness Clinic | <a href ="insert.link.here" target="_blank" rel="noopener noreferrer">Contact Us!</a></p>
+</footer>
+
+<script src="hw1.js"></script>
+
+</form>
+    </body>
+</html>
